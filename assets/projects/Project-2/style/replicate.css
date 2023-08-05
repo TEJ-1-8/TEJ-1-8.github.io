@@ -1,0 +1,388 @@
+/*** Header ***/
+.first {
+    background-color: rgba(128, 82, 157, 255);
+    position: relative;
+    min-height: fit-content;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+}
+#header {
+    font-family: 'poppins';
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    left: 100px;
+}
+.header {
+    font-family: 'poppins';
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    position:relative;
+    padding: 0px 0px 0px 60px;
+}
+nav {
+    display: inline-block;
+    padding: 45px 82px;
+    position: relative;
+    top: 0px;
+    width: 85%;
+}
+#header1 {
+    padding-left: 660px;
+}
+.header-button {
+    font-family: 'poppins';
+    background-color: white;
+    font-weight: 400;
+    font-size: x-small;
+    border-radius: 30px;
+    padding: 6px 26px;
+    position: absolute;
+    right: 80px;
+    font-size: 15px;
+}
+.width {
+    width: 100%;
+    align-content: center;
+}
+/***** Section-1 *****/
+#div1 {
+    position: absolute;
+    width: 90%;
+    right: 6%;
+    margin-top: 20px;
+}
+#div1::after {
+    clear: both;
+}
+#sidepic {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    right: 0px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+#pic2 {
+    width: 315px;
+    height: 230px;
+    margin-left: 40px;
+}
+#text1 {
+    font-family: Josefin Sans;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 35px;
+    font-size: 75px;
+    width: 900px;
+    margin-bottom: 15px;
+    color: white;
+}
+#search {
+    position: relative;
+    padding: 20px 250px 20px 40px;
+    border-radius: 45px;
+    border: 1px solid white;
+    font-family: 'poppins';
+    font-variant: small-caps;
+    font-size: 20px;
+    margin-left: 40px;
+}
+#icon1 {
+    background-color: #ff7138;
+    padding: 18px;
+    font-size: 27px;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    left: 518px;
+    margin-top: 5px;
+}
+/***** Section-2 *****/
+#div2 {
+    display: block;
+    position: relative;
+    width: 88%;
+    margin-top: 800px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 60px 20px 120px;
+    background-color: #61317f;
+    font-family: poppins;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 60px;
+}
+#div2 > p {
+    font-size: 29px;
+}
+#founder {
+    font-size: 15px;
+    line-height: 35px;
+}
+#fname {
+    font-size: 19px;
+    margin-top: 40px;
+    color: #fa6f3b;
+}
+/***** Section-3 *****/
+#div3 {
+    display: block;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    margin-bottom: 60px;
+}
+#div3::after {
+    clear: both;
+    float: none;
+}
+#pic3 {
+    width: 470px;
+    height: 550px;
+    float: left;
+    margin-right: 120px;
+}
+#head1 {
+    font-family: Josefin Sans;
+    font-size: 63px;
+    font-weight: 600;
+    color: white;
+    line-height: 80px;
+    padding-top: 35px;
+    margin-bottom: 25px;
+}
+#para1 {
+    font-family: poppins;
+    color: #99a7ac;
+    font-size: 18px;
+    font-weight: 300;
+}
+/***** Section-4 *****/
+#flex {
+    display: block;
+    width: 100%;
+    background-color: white;
+    height: 260px;
+    position: relative;
+    margin-top: 170px;
+    margin-bottom: 100px;
+    padding-right: 70px;
+}
+.items {
+    width: 260px;
+    height: 260px;
+    background-color: #f8b63c;
+    font-family: poppins;
+    font-size: 30px;
+    color: #cb8f1f;
+    line-height: 40px;
+    padding-left: 35px;
+}
+#item1 {
+    position: absolute;
+    right: 100px;
+    top: -100px;
+}
+#item2 {
+    position: absolute;
+    top: -100px;
+    right: 400px;
+}
+#item3 {
+    position: absolute;
+    top: -100px;
+    right: 700px;
+}
+#sub {
+    color: black;
+}
+/***** Section-5 (Grid) *****/
+#width2 {
+    background-color: white;
+    width: 100%;
+}
+#para2 {
+    font-family: poppins;
+    color: #99a7ac;
+    font-size: 18px;
+    font-weight: 300;
+}
+#grid {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-template-rows: 380px 350px 420px;
+    gap: 50px;
+    padding: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    justify-content: space-between;
+    font-family: poppins;
+}
+#grid > * {
+    background-color: white;
+}
+#img5 {
+    width: 600px;
+    height: 450px;
+}
+#img6 {
+    width: 400px;
+    height: 270px;
+}
+#element4 {
+    padding-left: 50px;
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+#subele11 {
+    font-family: Josefin Sans;
+    font-size: 54px;
+    width: 115%;
+    line-height: 70px;
+    margin-bottom: 35px;
+}
+#subele12 {
+    font-size: 25px;
+}
+#subele13 {
+    font-size: 25px;
+    margin-left: 70px;
+}
+#subele21 {
+    margin-top: 45px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+/***** Section-6 (Grid) *****/
+#grid2 {
+    display: grid;
+    grid-template-columns: 50% 40%;
+    grid-template-rows: 260px 300px;
+    padding: 0px 100px 0px 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+#ele1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+#subele211 {
+    font-family: Josefin Sans;
+    font-size: 51px;
+    width: 115%;
+    margin-top: 20px;
+    line-height: 70px;
+}
+#ele2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+}
+.box1 {
+    width: 350px;
+    height: fit-content;
+    font-family: poppins;
+}
+#subele31 {
+    margin-top: 75px;
+    margin-bottom: 0px;
+    font-size: 23px;
+}
+#small {
+    padding: 9px 17px;
+    background-color: #f8b63c;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+}
+#para3 {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #99a7ac;
+}
+.container {
+    position: relative;
+}
+.dash {
+    border: none;
+    border-top: 2px dashed #262829;
+    width: 800px;
+    position: absolute;
+    top: 267px;
+    left: 150px;
+}
+/***** Section-6 (Grid) *****/
+#last {
+    display: grid;
+    padding: 0px 100px 50px 100px;
+    grid-template-columns: 40% 50%;
+}
+#subele411 {
+    font-family: poppins;
+    font-size: 51px;
+    font-weight: 500;
+    width: 115%;
+    margin-top: 0px;
+    line-height: 70px;
+}
+#para4 {
+    font-size: 15px;
+    margin-top: 10px;
+    font-family: poppins;
+}
+/***** Footer *****/
+#foo {
+    background-color: #f8f8f8;
+    padding: 45px;
+    font-family: poppins;
+    height: 400px;
+}
+.subfooter {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding-bottom: 60px;
+}
+.footerele {
+    line-height: 38px;
+}
+.foolist {
+    list-style: none;
+    color: #929292;
+}
+#main {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    padding-bottom: 5px;
+}
+#made {
+    padding-left: 40px;
+    color: #929292;
+}
+.subfooter2 {
+    position: relative;
+}
+#icon3 {
+    width: 40px;
+    position: absolute;
+    right: 100px;
+    top: -20px;
+}
