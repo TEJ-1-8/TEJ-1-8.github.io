@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lo Mein Noodles</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../Images/logo/logo.png">
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        background-color: rgb(82, 79, 79);
+      }
+      nav {
+        width: 10%;
+        background-color: aqua;
+        align-self: stretch;
+        position: sticky;
+        padding: 10px;
+        line-height: 2;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-shadow: 4px 4px 3px rgb(0, 0, 0);
+        font-family: Oswald;
+        margin: 5px;
+        font-size: 3rem;
+        display: flex;
+        align-self: center;
+      }
+      .article {
+        padding: 20px;
+        background-color: chartreuse;
+      }
+      footer {
+        padding: 20px;
+        word-spacing: 10px;
+        background-color: rgb(120, 16, 211);
+      }
+      #cc {
+        word-spacing: 2px;
+      }
+      nav>a,footer>a {
+        color: azure;
+        font-weight: 600;
+        padding: 10px;
+        text-decoration: none;
+        font-family: Roboto Slab;
+      }
+      nav>a:hover,footer>a:hover {
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(151, 151, 151);
+        padding: 5px;
+        background-color: rgb(240, 255, 242);
+        text-decoration: none;
+        border-radius: 6px;
+      }
+      h3,h2,p {
+        padding: 10px;
+      }
+      h2,h3,h4 {
+        font-family: Geologica;
+        margin: 0px;
+        font-variant: small-caps;
+        font-weight: bolder;
+        font-style: oblique;
+      }
+      footer,
+      .article,
+      nav {
+        border: 2px solid white;
+        margin: 1px;
+        border-radius: 5px;
+      }
+      .logo {
+        display: flex;
+        justify-items: center;
+        align-self: center;
+        padding: 10px;
+      }
+      img {
+        align-self: center;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-right: 5px;
+      }
+      .btn:hover {
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+        border-radius: 10px;
+      }
+      .btn {
+        background-color: white;
+        color: black;
+        border: 3px solid rgb(92, 90, 90);
+        border-radius: 10px;
+      }
+      #featured {
+        font-size: larger;
+      }
+      .box {
+        background-color: rgb(117, 233, 94);
+        margin: 20px;
+        margin-top: 50px;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        padding: 15px;
+      }
+      .minibox {
+        background-color: rgb(72, 207, 60);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .Ing {
+        padding: 20px;
+        clear: left;
+      }
+      .caro {
+        margin: 30px;
+        display: flex;
+        float: left;
+        width: 300px;
+        height: 250px;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 10px;
+        border: 4px solid white;
+      }
+      .Ing>p {
+        padding: 0;
+      }
+      .Ing>ul {
+        padding-top: 10px;
+      }
+      #span {
+        font-variant: small-caps;
+      }
+      .article>p {
+        text-indent: 50px;
+      }
+      P {
+        font-family: Roboto Condensed;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Home</a>
+      <h3 id="featured">Featured Dishes</h3>
+      <a href="dish1.html">Dish 1</a>
+      <a href="dish2.html">Dish 2</a>
+      <a href="dish3.html">Dish 3</a>
+      <a href="dish4.html">Dish 4</a>
+      <a href="dish5.html">Dish 5</a>
+    </nav>
+    <div class="main">
+      <div class="logo">
+        <img src="../Images/logo/logo.png" alt="ALT" width="40px" height="40px">
+        <h1><span id="span">Recipe</span>MASTER</h1>
+    </div>
+      <div class="article">
+        <h2>Lo Mein Noodles</h2>
+        <p>These lo mein noodles were created from a blend of multiple recipes. Add your favorite meat for a main dish or serve as a side. If serving with meat, cook the meat separately.
+        </p>
+        <div class="caro">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="Carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../Images/dish7/img1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Images/dish7/img2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Images/dish7/img3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Images/dish7/img4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Images/dish7/img5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Images/dish7/img3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="container-bg-color-prinmary box">
+            <div class="minibox"><h4>Prep Time:</h4>15 min</div>
+            <div class="minibox"><h4>Cook Time:</h4>25 mins</div>
+            <div class="minibox"><h4>Total Time:</h4>40 min</div>
+            <div class="minibox"><h4>Servings:</h4>4</div>
+        </div>
+        <div class="Ing">
+            <h4>Ingredients</h4>
+            <ul class="dish" id="dish7">
+                <li>1 (8 ounce) package spaghetti</li>
+                <li>3 tablespoons low-sodium soy sauce</li>
+                <li>2 tablespoons teriyaki sauce</li>
+                <li>2 tablespoons honey</li>
+                <li>¼ teaspoon ground ginger</li>
+                <li>2 tablespoons vegetable oil</li>
+                <li>3 stalks celery, sliced</li>
+                <li>2 large carrots, cut into large matchsticks</li>
+                <li>½ sweet onion, thinly sliced</li>
+                <li>2 green onions, sliced</li>
+            </ul>
+        </div>
+        <div class="Ing">
+            <h4>Directions</h4>
+            <p><h5>Step 1:</h5>Bring a large pot of lightly salted water to a boil. Cook spaghetti in boiling water, stirring occasionally, until tender yet firm to the bite, about 12 minutes; drain, then rinse with cold water to cool.</p>
+            <p><h5>Step 2:</h5>Meanwhile, whisk together soy sauce, teriyaki sauce, honey, and ginger in a small bowl; set aside.</p>
+            <p><h5>Step 3:</h5>Heat oil in a large skillet or wok over high heat. Cook and stir celery, carrots, onion, and green onions in hot oil until slightly tender, 5 to 7 minutes. Add spaghetti and soy sauce mixture. Cook, stirring frequently, until heated through, about 5 minutes.</p>
+        </div>
+      </div>
+      <footer>
+        <a class="footer" href="">FAQs</a>
+        <a class="footer" href="" id="cc">Terms of Use</a>
+        <a class="footer" href="" id="cc">Privacy Policy</a>
+        <a class="footer" href="">Donate</a>
+        <a class="footer" href="" id="cc">Customer Care</a>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

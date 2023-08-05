@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Salmon Fillets with Spinach for Two</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="../Images/logo/logo.png">
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        background-color: rgb(82, 79, 79);
+      }
+      nav {
+        width: 10%;
+        background-color: aqua;
+        align-self: stretch;
+        position: sticky;
+        padding: 10px;
+        line-height: 2;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-shadow: 4px 4px 3px rgb(0, 0, 0);
+        font-family: Oswald;
+        margin: 5px;
+        font-size: 3rem;
+        display: flex;
+        align-self: center;
+      }
+      .article {
+        padding: 20px;
+        background-color: chartreuse;
+      }
+      footer {
+        padding: 20px;
+        word-spacing: 10px;
+        background-color: rgb(120, 16, 211);
+      }
+      #cc {
+        word-spacing: 2px;
+      }
+      nav>a,footer>a {
+        color: azure;
+        font-weight: 600;
+        padding: 10px;
+        text-decoration: none;
+        font-family: Roboto Slab;
+      }
+      nav>a:hover,footer>a:hover {
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(151, 151, 151);
+        padding: 5px;
+        background-color: rgb(240, 255, 242);
+        text-decoration: none;
+        border-radius: 6px;
+      }
+      h3,h2,p {
+        padding: 10px;
+      }
+      h2,h3,h4 {
+        font-family: Geologica;
+        margin: 0px;
+        font-variant: small-caps;
+        font-weight: bolder;
+        font-style: oblique;
+      }
+      footer,
+      .article,
+      nav {
+        border: 2px solid white;
+        margin: 1px;
+        border-radius: 5px;
+      }
+      .logo {
+        display: flex;
+        justify-items: center;
+        align-self: center;
+        padding: 10px;
+      }
+      img {
+        align-self: center;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-right: 5px;
+      }
+      .btn:hover {
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+        border-radius: 10px;
+      }
+      .btn {
+        background-color: white;
+        color: black;
+        border: 3px solid rgb(92, 90, 90);
+        border-radius: 10px;
+      }
+      #featured {
+        font-size: larger;
+      }
+      .box {
+        background-color: rgb(117, 233, 94);
+        margin: 20px;
+        margin-top: 50px;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        padding: 15px;
+      }
+      .minibox {
+        background-color: rgb(72, 207, 60);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .Ing {
+        padding: 20px;
+        clear: left;
+      }
+      .caro {
+        margin: 30px;
+        display: flex;
+        float: left;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 10px;
+        border: 4px solid white;
+      }
+      .Ing>p {
+        padding: 0;
+      }
+      .Ing>ul {
+        padding-top: 10px;
+      }
+      #span {
+        font-variant: small-caps;
+      }
+      .article>p {
+        text-indent: 50px;
+      }
+      P {
+        font-family: Roboto Condensed;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Home</a>
+      <h3 id="featured">Featured Dishes</h3>
+      <a href="dish1.html">Dish 1</a>
+      <a href="dish2.html">Dish 2</a>
+      <a href="dish3.html">Dish 3</a>
+      <a href="dish4.html">Dish 4</a>
+      <a href="dish5.html">Dish 5</a>
+    </nav>
+    <div class="main">
+      <div class="logo">
+        <img src="../Images/logo/logo.png" alt="ALT" width="40px" height="40px">
+        <h1><span id="span">Recipe</span>MASTER</h1>
+    </div>
+      <div class="article">
+        <h2>Salmon Fillets with Spinach for Two</h2>
+        <p>Frozen spinach and garden vegetable cream cheese combine with salmon fillets! This is easy to double, if you need 4 servings. Created for a regular oven, this recipe is easily prepared in an air fryer by reducing the temperature by 25 degrees and reducing the time by five minutes. Be sure to monitor for doneness, because overcooking will dry out the salmon.
+        <div class="caro">
+            <div id="myCarousel" class="carousel slide" data-bs-ride="Carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../Images/dish13/img1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Images/dish4/img2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Images/dish4/img3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Images/dish4/img4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Images/dish4/img5.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../Images/dish4/img3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div class="container-bg-color-prinmary box">
+            <div class="minibox"><h4>Prep Time:</h4>15 min</div>
+            <div class="minibox"><h4>Cook Time:</h4>20 mins</div>
+            <div class="minibox"><h4>Total Time:</h4>35 min</div>
+            <div class="minibox"><h4>Servings:</h4>2</div>
+            <div class="minibox"><h4>Yield:</h4>2 servings</div>
+        </div>
+        <div class="Ing">
+            <h4>Ingredients</h4>
+            <ul class="dish" id="dish13">
+                <li>4 ounces frozen chopped spinach, thawed</li>
+                <li>1 tablespoon unsalted butter</li>
+                <li>¾ cup chopped fresh mushrooms</li>
+                <li>¼ cup chopped onion</li>
+                <li>¼ cup grated Parmesan cheese</li>
+                <li>3 ounces garden vegetable cream cheese, softened</li>
+                <li>¼ teaspoon garlic powder</li>
+                <li>⅛ teaspoon kosher salt, or to taste</li>
+                <li>ground black pepper to taste</li>
+                <li>1 tablespoon extra-virgin olive oil</li>
+                <li>1 tablespoon fresh lemon juice</li>
+                <li>2 (8 ounce) skinless salmon fillets</li>
+                <li>ground sea salt to taste</li>
+                <li>2 slices lemon</li>
+                <li>1 tablespoon chopped fresh parsley, or to taste</li>
+            </ul>
+        </div>
+        <div class="Ing">
+            <h4>Directions</h4>
+            <p><h5>Step 1:</h5>Preheat the oven to 400 degrees F (200 degrees C). Line a 9x11-inch baking pan with foil.</p>
+            <p><h5>Step 2:</h5>Press as much liquid from the thawed spinach as possible using clean dish towels or paper towels and place in a medium mixing bowl.</p>
+            <p><h5>Step 3:</h5>Melt butter in a small, nonstick skillet over medium heat. Stir in mushrooms and onions and cook, stirring occasionally, until the onions begin to turn clear, about 4 minutes. Add cooked mushrooms and onions to spinach with Parmesan cheese, garden vegetable cream cheese, and garlic powder. Stir until well combined and add kosher salt and pepper. Set aside.</p>
+            <p><h5>Step 4:</h5>Combine olive oil and lemon juice in a small bowl.</p>
+            <p><h5>Step 5:</h5>Pat salmon fillets dry and brush both sides with the combined olive oil and lemon juice. Place fillets in the foil-lined pan and sprinkle with ground sea salt. Divide spinach mixture evenly between the two fillets.</p>
+            <p><h5>Step 6:</h5>Bake in the preheated oven until the salmon flakes easily with a fork, 15 to 19 minutes. Garnish with lemon slices and fresh parsley.</p>
+        </div>
+      </div>
+      <footer>
+        <a class="footer" href="">FAQs</a>
+        <a class="footer" href="" id="cc">Terms of Use</a>
+        <a class="footer" href="" id="cc">Privacy Policy</a>
+        <a class="footer" href="">Donate</a>
+        <a class="footer" href="" id="cc">Customer Care</a>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

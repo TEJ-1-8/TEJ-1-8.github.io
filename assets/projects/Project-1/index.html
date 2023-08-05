@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | RecipeMASTER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geologica&family=Oswald:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Images/logo/logo.png">
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        background-color: rgb(82, 79, 79);
+      }
+      nav {
+        width: 12%;
+        background-color: aqua;
+        align-self: stretch;
+        position: sticky;
+        padding: 10px;
+        line-height: 2;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+      }
+      h1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-shadow: 4px 4px 3px rgb(0, 0, 0);
+        font-family: Oswald;
+        margin: 5px;
+        font-size: 3rem;
+        display: flex;
+        align-self: center;
+      }
+      .article {
+        padding: 20px;
+        background-color: chartreuse;
+      }
+      footer {
+        padding: 20px;
+        word-spacing: 10px;
+        background-color: rgb(120, 16, 211);
+      }
+      #cc {
+        word-spacing: 2px;
+      }
+      nav>a,footer>a {
+        color: azure;
+        font-weight: 600;
+        padding: 10px;
+        text-decoration: none;
+        font-family: Roboto Slab;
+      }
+      nav>a:hover,footer>a:hover {
+        color: rgb(0, 0, 0);
+        text-shadow: 2px 2px 2px rgb(151, 151, 151);
+        padding: 5px;
+        background-color: rgb(240, 255, 242);
+        text-decoration: none;
+        border-radius: 6px;
+      }
+      p,
+      h3,h2 {
+        padding: 10px;
+      }
+      h3,h2,h4 {
+        font-family: Geologica;
+        font-size: xx-large;
+        margin: 0px;
+        font-variant: small-caps;
+        font-style: oblique;
+      }
+      footer,
+      .article,
+      nav {
+        border: 2px solid white;
+        margin: 1px;
+        border-radius: 5px;
+      }
+      .logo {
+        display: flex;
+        justify-items: center;
+        align-self: center;
+        padding: 10px;
+      }
+      img {
+        align-self: center;
+        border: 1px solid white;
+        border-radius: 8px;
+        margin-right: 5px;
+      }
+      .btn:hover {
+        background-color: black;
+        color: white;
+        border: 3px solid white;
+        border-radius: 10px;
+      }
+      .btn {
+        background-color: white;
+        color: black;
+        border: 3px solid black;
+        border-radius: 10px;
+      }
+      #parentList>li {
+        display: grid;
+        border: 1px solid black;
+        background-color: azure;
+        list-style-position: inside;
+        padding: 10px;
+        align-self: center;
+        font-weight: 700;
+        width: 100%;
+        margin: 5px;
+        border-radius: 10px;
+        grid-template-columns: 5fr 1fr;
+      }
+      #parentList>li>button {
+        display: flex;
+        float: right;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(250, 180, 50);
+        color: aliceblue;
+        font-weight: 800;
+        flex-direction: column;
+        padding-left: 10px;
+        padding-bottom: 5px;
+      }
+      #parentList>li>button:hover {
+        background-color: aliceblue;
+        color: rgb(250, 180, 50);
+        box-shadow: 4px 3px 4px rgb(250, 180, 50);
+        border-color: rgb(250, 180, 50);
+      }
+      #featured {
+        font-size: larger;
+      }
+      .caro {
+        margin: 30px;
+        display: flex;
+        float: left;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 10px;
+        border: 4px solid white;
+      }
+      .box {
+        background-color: rgb(117, 233, 94);
+        margin: 20px;
+        margin-top: 50px;
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        padding: 15px;
+      }
+      .minibox {
+        background-color: rgb(72, 207, 60);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .Ing {
+        padding: 20px;
+        clear: left;
+      }
+      .Ing>p {
+        padding: 0;
+      }
+      .Ing>ul {
+        padding-top: 10px;
+      }
+      .article>a {
+        text-decoration: none;
+        color: black;
+      }
+      .article>p {
+        text-indent: 50px;
+      }
+      .article {
+        margin-bottom: 10px;
+      }
+      .maindish {
+        height: 500px;
+        overflow: scroll;
+        scroll-behavior:smooth ;
+        border: 4px solid white;
+        margin: 10px;
+        border-radius: 5px;
+        padding: 10px;
+        padding-bottom: 0;
+      }
+      .maindish>h2 {
+        font-size: 50px;
+        background-color: black;
+        color: chartreuse;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 900;
+        margin-bottom: 10px;
+      }
+      .box {
+        align-items: center;
+        background-color: rgb(82, 79, 79);
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        padding: 15px;
+        border-radius: 5px;
+      }
+      .minibox {
+        background-color: rgb(72, 207, 60);
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .article>ul {
+        align-items: center;
+      }
+      #span {
+        font-variant: small-caps;
+      }
+      P {
+        font-family: Roboto Condensed;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <h3 id="featured">Featured Dishes</h3>
+      <a href="html/dish1.html">Dish 1</a>
+      <a href="html/dish2.html">Dish 2</a>
+      <a href="html/dish3.html">Dish 3</a>
+      <a href="html/dish2.html">Dish 4</a>
+      <a href="html/dish4.html">Dish 5</a>
+    </nav>
+    <div class="main">
+        <div class="logo">
+            <img src="Images/logo/logo.png" alt="ALT" width="40px" height="40px">
+            <h1><span id="span">Recipe</span>MASTER</h1>
+        </div>
+      <div class="article">
+        <div class="container col-6">
+            <div class="input-group mb-5 p-2">
+              <select class="form-select" id="inputGroupSelect02" aria-placeholder="Add atleast 3 dishes">
+                <option selected disabled>Add atleast 3 dishes</option>
+                <option class="dish5" value="arugula">arugula</option>
+                <option class="dish5" value="bacon">bacon</option>
+                <option class="dish6-dish15" value="broccoli">broccoli</option>
+                <option class="dish2-dish12-dish13-dish15" value="butter">butter</option>
+                <option class="dish7-dish15" value="carrots">carrots</option>
+                <option class="dish7" value="celery">celery</option>
+                <option class="dish2-dish5-dish10-dish13" value="cheese">cheese</option>
+                <option class="dish1-dish6-dish8-dish12-dish14" value="chicken">chicken</option>
+                <option class="dish11" value="chickpeas">chickpeas</option>
+                <option class="dish9-dish11" value="chili powder">chili powder</option>
+                <option class="dish4-dish11" value="coriander">coriander</option>
+                <option class="dish6" value="cornstarch">cornstarch</option>
+                <option class="dish4-dish8-dish9" value="cumin">cumin</option>
+                <option class="dish8-dish12" value="drained capers">drained capers</option>
+                <option class="dish6" value="dry sherry">dry sherry</option>
+                <option class="dish2-dish4-dish9-dish15" value="egg">egg</option>
+                <option class="dish11" value="garnish">garnish</option>
+                <option class="dish4-dish5-dish6-dish8-dish9-dish10-dish11-dish13-dish14-dish15" value="garlic">garlic</option>
+                <option class="dish4-dish7-dish11-dish15" value="ginger paste">ginger paste</option>
+                <option class="dish7" value="honey">honey</option>
+                <option class="dish1-dish5-dish12-dish13" value="lemon">lemon</option>
+                <option class="dish2" value="macaroni">macaroni</option>
+                <option class="dish2" value="milk">milk</option>
+                <option class="dish13" value="mushrooms">mushrooms</option>
+                <option class="dish1-dish5-dish8-dish10-dish1-dish12-dish13" value="olive oil">olive oil</option>
+                <option class="dish4-dish6-dish7-dish9-dish11-dish13-dish15" value="onion">onion</option>
+                <option class="dish1" value="oregano">oregano</option>
+                <option class="dish1-dish10-dish13" value="parsley">parsley</option>
+                <option class="dish5" value="pasta">pasta</option>
+                <option class="dish1-dish2-dish3-dish4-dish5-dish6-dish8-dish9-dish10-dish11-dish13-dish14" value="pepper">pepper</option>
+                <option class="dish8" value="pickle">pickle</option>
+                <option class="dish15" value="pork">pork</option>
+                <option class="dish10" value="spaghetti">spaghetti</option>
+                <option class="dish7-dish15" value="soy sauce">soy sauce</option>
+                <option class="dish9" value="spanish paprika">spanish paprika</option>
+                <option class="dish13" value="spinach">spinach</option>
+                <option class="dish3" value="steak">steak</option>
+                <option class="dish6-dish9-dish11" value="sweet onion">sweet onion</option>
+                <option class="dish6-dish7" value="teriyaki sauce">teriyaki sauce</option>
+                <option class="dish4-dish5-dish8-dish9-dish11-dish14" value="tomato">tomato</option>
+                <option class="dish4-dish11" value="turmeric">turmeric</option>
+                <option class="dish4-dish6-dish7-dish9" value="vegetable oil">vegetable oil</option>
+                <option class="dish3-dish4" value="vinegar">vinegar</option>
+                <option class="dish3-dish12" value="wine">wine</option>
+                <option class="dish6-dish14" value="zucchini">zucchini</option>
+            </select>
+            <button class="input-group-text btn" for="inputGroupSelect02" onclick="" id="add-btn">Add</button>
+          </div>
+        </div>
+        <div class="container col-8 pr-3">
+          <ul class="container box" id="parentList">
+          </ul>
+        </div>
+        <div id="mainDish">
+        
+        </div> 
+        <div class="maindish">
+          <h2>All Dishes</h2>
+        <div class="article">
+          <a href="html/dish1.html"><h2>Simple Lemon Herb Chicken</h2></a>
+          <p>
+            This lemon-herb chicken is a simple, quick, and delicious dish. All you need are a few herbs, a lemon, and of course, the chicken! The amount of spices is completely up to you. You can add more or less according to your taste.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish2.html"><h2>Baked Macaroni and Cheese</h2></a>
+          <p>
+            This easy mac and cheese is baked in the oven for a quick meal. A friend of mine sent me this recipe when I got my first apartment because she knew I hated cooking! It's really easy — even I can make it — and it tastes great. I'm not sure where she found the recipe.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish3.html"><h2>Filet Mignon with Rich Balsamic Glaze</h2></a>
+          <p>
+              This is the best filet mignon recipe for an elegant dinner for two. Red wine and balsamic vinegar make a wonderfully rich sauce to serve with the steak. Delicious with steamed asparagus and baby red potatoes.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish4.html"><h2>Egg Curry</h2></a>
+          <p>
+            This is a quick solution to a curry when there is no meat or fish. Best eaten hot over white rice. Garnish with cilantro leaves.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish5.html"><h2>Chef John's BLT Pasta</h2></a>
+          <p>
+            If you can't decide whether to make a BLT sandwich or a pasta, now you can do both. The combination of bacon, lettuce, and tomato has a proven track record of deliciousness! Try this BLT pasta for yourself.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish6.html"><h2>Stir-Fry Chicken and Vegetables</h2></a>
+          <p>
+            This chicken stir-fry with vegetables is one of my favorite stir-fry recipes. Simple, quick, and easy. Serve over rice.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish7.html"><h2>Lo Mein Noodles</h2></a>
+          <p>
+            These lo mein noodles were created from a blend of multiple recipes. Add your favorite meat for a main dish or serve as a side. If serving with meat, cook the meat separately.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish8.html"><h2>Quick and Easy Chicken Piquant</h2></a>
+          <p>
+            This recipe is a variation on traditional chicken piquant which is spicy Cajun chicken. This comes together quickly and is good served over white rice.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish9.html"><h2>Mexican Shakshuka</h2></a>
+          <p>
+            This Mexican-inspired shakshuka recipe is a one-skillet poached egg dish hearty enough to feed a crowd. It's full of all the flavors you expect from Mexican recipes — tomatoes, onions, smoked peppers, cumin, chili powders, and Spanish paprika. Serve with warmed corn or flour tortillas and butter-fried hominy.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish10.html"><h2>Spaghetti Aglio e Olio</h2></a>
+          <p>
+            No two aglio e olio recipes are alike, but this one is pretty true to the classic method. The key is slowly toasting the garlic slices to a perfect golden brown in the olive oil. If it's too light, you don't get the full flavor and if it's too dark it gets bitter. My advice? Do it perfectly.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish11.html"><h2>Chana Masala (Savory Indian Chick Peas)</h2></a>
+          <p>
+            Give this chana masala dish a try and don't look back. Indian food is not just curried sauces. This spin on an Indian chickpea curry features a healthy mixture of chickpeas, tomatoes, onion, and spices. Both carnivores and vegetarians will enjoy this meal. My kids love it. Leave out the green chile if the kiddies will be eating. Serve over basmati or jasmine rice and enjoy. Namaste y'all!
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish12.html"><h2>Chicken with Lemon-Caper Sauce</h2></a>
+          <p>
+            A rich lemon sauce for chicken makes this dish perfect for a special meal.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish13.html"><h2>Salmon Fillets with Spinach for Two</h2></a>
+          <p>
+            Frozen spinach and garden vegetable cream cheese combine with salmon fillets! This is easy to double, if you need 4 servings. Created for a regular oven, this recipe is easily prepared in an air fryer by reducing the temperature by 25 degrees and reducing the time by five minutes. Be sure to monitor for doneness, because overcooking will dry out the salmon.
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish14.html"><h2>Italian White Bean Chicken</h2></a>
+          <p>
+            Italian White Bean Chicken
+          </p>
+        </div>
+        <div class="article">
+          <a href="html/dish15.html"><h2>Pork Fried Rice</h2></a>
+          <p>
+            This pork fried rice recipe is my revised version of another recipe. I often substitute chicken for pork, and it doesn't change anything. I have used both basmati rice and long-grain rice which gives the dish only a slight flavor difference. I have also added celery in the past with good outcomes.
+          </p>
+        </div>
+        </div> 
+      </div>
+      <footer>
+        <a class="footer" href="">FAQs</a>
+        <a class="footer" href="" id="cc">Terms of Use</a>
+        <a class="footer" href="" id="cc">Privacy Policy</a>
+        <a class="footer" href="">Donate</a>
+        <a class="footer" href="" id="cc">Customer Care</a>
+      </footer>
+      <script src="script/mainscript.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
